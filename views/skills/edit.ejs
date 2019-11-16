@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit Skill</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Edit the Dev Skill</h1>
+    <form action="/skills/<%= idx %>?_method=PUT" method="POST">
+      <input type="text" name="skill" value="<%= skill.skill %>">
+      <button type="submit">Submit Skill</button>
+      <a href="/skills">Cancel</a>
+    </form>
+  </body>
+</html>
