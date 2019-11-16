@@ -9,5 +9,5 @@ router.get('/:id', skillsCtlr.show);
 router.post('/', skillsCtlr.create);
 router.delete('/:id', skillsCtlr.delete);
 router.get('/:id/edit', skillsCtlr.edit);
-
+router.put('/:id', skillsCtlr.update);
 module.exports = router;

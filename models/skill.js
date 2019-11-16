@@ -9,7 +9,8 @@ module.exports = {
     getAll,
     showOne,
     addSkill,
-    deleteSkill
+    deleteSkill, 
+    update
 }
 
 function getAll() {
@@ -26,4 +27,8 @@ function addSkill(devSkill) {
 
 function deleteSkill(idx) {
     skills.splice(idx, 1);
+}
+
+function update(idx, skill) {
+    skills.splice(idx, 1, skill);
 }
